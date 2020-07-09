@@ -1,0 +1,43 @@
+/********    OVERRIDE BOOTSTRAP    *******/
+#main .navbar-text {
+  padding: 0;
+  margin: 0.4rem 0.2rem;
+}
+/********    GENERAL    *******/
+body {
+  padding-top: 5rem;
+  width: 100%;
+  height: 100%;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+.submit-btn {
+  background-color: #b1dbff;
+  margin: 10px 0 10px 0;
+}
+
+.post {
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.odd {
+  background-color: #c2e2ff;
+}
+.even {
+  background-color: #ffffac;
+}
+
+.form-auth {
+  max-width: 330px;
+  padding: 5px;
+  margin: 0 auto;
+}
+.pull-right {
+  float: right;
+}

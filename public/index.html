@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <!-- prettier-ignore -->
+  <head>
+    <title>GeezUs ! A twitter clone app</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/geezStyle.css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  </head>
+  <body ng-app="geezApp">
+    <main id="main" class="container">
+      <nav class="navbar fixed-top navbar-light navbar-dark bg-primary">
+        <div class="logo">
+          <a class="navbar-brand" href="#">GeezUs</a>
+          <span class="navbar-text">
+            You can lay out your geez here anytime !!!
+          </span>
+        </div>
+        <p class="navbar-text" ng-hide="authenticated">
+          <a href="#/login">Login</a> or <a href="#/register">Register</a>
+        </p>
+        <p class="navbar-right navbar-text" ng-show="authenticated">
+          <a href="#" ng-click="logout()">Logout</a>
+        </p>
+      </nav>
+      <div class="col-xs-12 offset-sm-1 col-sm-10 offset-md-2 col-md-8">
+        <div ng-view></div>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-resource.js"></script>
+    <script src="javascripts/geezApp.js"></script>
+  </body>
+</html>
